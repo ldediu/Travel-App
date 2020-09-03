@@ -1,0 +1,110 @@
+.backgr {
+  max-width: 100%;
+  height: 60vh;
+  background-image: url("../media/back4.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  @media (max-width:450px){
+    padding: 10px 5px 0 5px;
+  }
+}
+
+.form_section {
+  width: 100%;
+  grid-area: 1 / 2 / 2 / 4;
+  margin: 0 auto;
+  @media (max-width:1300px){
+    grid-area: 1 / 1 / 2 / 4;
+  }
+
+  h1 {
+    font-family: 'Arizonia', cursive;
+    font-size: 3rem;
+    text-align: center;
+    color: #eeeeee;
+    @media (max-width:1300px){
+      font-size: 2.5rem;
+    }
+    @media (max-width:450px){
+      font-size: 2rem;
+      margin: 0;
+    }
+  }
+
+  form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+    margin: 0 auto;
+    margin-top: 3rem;
+    border-radius: 10px;
+    padding: 30px;
+    background-color: rgba(78, 137, 174, 0.9);
+    box-shadow: 2px 2px 5px black;
+    max-width: 800px;
+
+    @media (max-width:600px){
+      background-color: rgba(78, 137, 174, 0.4);
+      display: grid;
+      grid-template-columns: 1fr;
+      margin-top: 1rem;
+      grid-gap: 1rem;
+    }
+    @media (max-width:415px){
+      transform: scale(0.8);
+      margin-top: 0;
+      grid-gap: 5px;
+      padding: 20px;
+      font-size: 0.9;
+    }
+
+    label, a {
+      display: block;
+      color: #eeeeee;
+    }
+
+    label {
+      margin-bottom: 5px;
+    }
+
+    .full_form {
+      grid-column: 1 / 3;
+      @media (max-width:600px){
+        grid-column: 1 / 2;
+      }
+    }
+
+    .btn {
+      width: 100%;
+      text-decoration: none;
+      color: #eeeeee;
+      border: 1px solid black;
+      border-radius: 5px;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      box-shadow: 1px 3px 5px rgba(104, 104, 104, 1);
+      margin-top: 10px;
+      text-align: center;
+      &:hover {
+        background: #184e6e;
+        color: white;
+      }
+    }
+
+    input {
+      width: 100%;
+      font-size: 1.2rem;
+      padding: 1px;
+      margin: 0;
+      outline: none;
+      border: none;
+      color: #222222;
+      background-color: #eeeeee;
+    }
+  }
+
+}

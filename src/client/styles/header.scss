@@ -1,0 +1,40 @@
+header {
+  display: flex;
+  flex-direction: row;
+  background-color: #4e89ae;
+  color: white;
+  height: 7vh;
+  align-items: center;
+  justify-content: space-between;
+  @media (max-width:400px){
+    font-size: 1rem;
+  }
+}
+
+.logo_and_name {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 2rem;
+  @media (max-width:450px){
+    margin-left: 1rem;
+  }
+  .logo_name {
+    color: black;
+    font-family: 'Arizonia', cursive;
+    font-size: 2rem;
+  }
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  p {
+    padding-right: 2rem;
+    @media (max-width:450px){
+      padding-right: 1rem;
+    }
+  }
+}
