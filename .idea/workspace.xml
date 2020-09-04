@@ -1,7 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="7b01384d-be7c-44fe-a60f-5d24df647bf6" name="Default Changelist" comment="" />
+    <list default="true" id="7b01384d-be7c-44fe-a60f-5d24df647bf6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/server.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,7 +46,7 @@
     <property name="javascript.nodejs.core.library.typings.version" value="12.12.54" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RunManager">
     <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
@@ -52,12 +73,26 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1598737576448</updated>
-      <workItem from="1598737578297" duration="29966000" />
+      <workItem from="1598737578297" duration="34365000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.env" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="WindowStateProjectService">
     <state x="0" y="224" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598761340661">
@@ -65,6 +100,10 @@
     </state>
     <state x="0" y="222" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1598759937310" />
     <state x="0" y="224" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1792.1016@0.23.1792.1016" timestamp="1598761340661" />
+    <state x="631" y="340" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1599107977739">
+      <screen x="0" y="23" width="1792" height="1017" />
+    </state>
+    <state x="631" y="340" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1792.1017@0.23.1792.1017" timestamp="1599107977739" />
     <state width="920" height="276" key="GridCell.Tab.0.bottom" timestamp="1598764984970">
       <screen x="0" y="23" width="1792" height="1016" />
     </state>
@@ -81,10 +120,15 @@
       <screen x="0" y="23" width="1792" height="1016" />
     </state>
     <state width="920" height="276" key="GridCell.Tab.0.right/0.23.1792.1016@0.23.1792.1016" timestamp="1598764984970" />
-    <state x="235" y="238" key="SettingsEditor" timestamp="1598853129182">
-      <screen x="0" y="23" width="1792" height="1016" />
+    <state x="235" y="238" key="SettingsEditor" timestamp="1599100253647">
+      <screen x="0" y="23" width="1792" height="1017" />
     </state>
     <state x="235" y="237" key="SettingsEditor/0.0.1792.1120@0.0.1792.1120" timestamp="1598737944858" />
     <state x="235" y="238" key="SettingsEditor/0.23.1792.1016@0.23.1792.1016" timestamp="1598853129182" />
+    <state x="235" y="238" key="SettingsEditor/0.23.1792.1017@0.23.1792.1017" timestamp="1599100253647" />
+    <state x="561" y="248" width="670" height="676" key="search.everywhere.popup" timestamp="1599108089512">
+      <screen x="0" y="23" width="1792" height="1017" />
+    </state>
+    <state x="561" y="248" width="670" height="676" key="search.everywhere.popup/0.23.1792.1017@0.23.1792.1017" timestamp="1599108089512" />
   </component>
 </project>
