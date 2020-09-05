@@ -40,6 +40,8 @@ app.post('/results', async function(req, res) {
         data_storage.lng = geonamesData.geonames[0].lng;
         console.log('server = ', data_storage);
         // if OK -> take country info
+        // https://restcountries.eu/rest/v2/name/united%20states
+        // - currency, language, population
         // -> weather
         // -> pic
         res.send(data_storage);
