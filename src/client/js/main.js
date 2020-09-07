@@ -5,7 +5,7 @@ async function main(event) {
     let dep_time = document.getElementById('date_from').value;
     let ret_time = document.getElementById('date_return').value;
 
-    const api_response = await fetch("http://localhost:8081/results", {
+    const api_response = await fetch("/results", {
         method: "POST",
         credentials: 'same-origin',
         headers: {

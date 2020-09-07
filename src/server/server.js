@@ -6,20 +6,27 @@ const express = require('express')
 const bodyParser = require('body-parser')
 const cors = require('cors')
 const fetch = require('node-fetch')
-const request = require('request')
+//const request = require('request')
+
+const fetchGeonamesApi = require('./geonames')
+const fetchRestCountriesApi = require('./restcountries')
 
 let data_storage = {
     dest_name: '',
     country_name: '',
+    country_code: '',
     lat: '',
     lng: '',
     dep_date: '',
-    ret_date: ''
+    ret_date: '',
+    capital: '',
+    population: '',
+    flag: '',
+    lang: '',
+    currency: ''
 }
 
 dotenv.config()
-const api_geonamesorg = process.env.API_GEONAMESORG;
-console.log(`API geonames.org = ${api_geonamesorg}`);
 
 const app = express()
 app.use(cors())
@@ -29,21 +36,25 @@ app.use(express.static('dist'))
 
 app.post('/results', async function(req, res) {
     console.log('req = ',req.body)
-    const geonames_res = await fetch(`http://api.geonames.org/searchJSON?q=${req.body.destination}&maxRows=3&username=${api_geonamesorg}`)
     try {
-        const geonamesData = await geonames_res.json();
         data_storage.dep_date = req.body.departure_time;
         data_storage.ret_date = req.body.return_time;
-        data_storage.dest_name = geonamesData.geonames[0].name;
-        data_storage.country_name = geonamesData.geonames[0].countryName;
-        data_storage.lat = geonamesData.geonames[0].lat;
-        data_storage.lng = geonamesData.geonames[0].lng;
-        console.log('server = ', data_storage);
-        // if OK -> take country info
-        // https://restcountries.eu/rest/v2/name/united%20states
-        // - currency, language, population
-        // -> weather
-        // -> pic
+        //geonames.org api
+        let geonamesData = await fetchGeonamesApi(req.body.destination, process.env.API_GEONAMESORG);
+        data_storage.dest_name = geonamesData.dest_name;
+        data_storage.country_name = geonamesData.country_name;
+        data_storage.country_code = geonamesData.country_code
+        data_storage.lat = geonamesData.lat;
+        data_storage.lng = geonamesData.lng;
+
+        //restcountries api
+        let restcountriesData = await fetchRestCountriesApi(data_storage.country_code);
+        data_storage.capital = restcountriesData.capital;
+        data_storage.population = restcountriesData.population;
+        data_storage.flag = restcountriesData.flag;
+        data_storage.lang = restcountriesData.lang;
+        data_storage.currency = restcountriesData.curr;
+
         res.send(data_storage);
     } catch (error) {
         console.log('error', error);
