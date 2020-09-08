@@ -10,6 +10,7 @@ const fetch = require('node-fetch')
 
 const fetchGeonamesApi = require('./geonames')
 const fetchRestCountriesApi = require('./restcountries')
+const fetchWeatherbitApi = require('./weatherbit')
 
 let data_storage = {
     dest_name: '',
@@ -23,7 +24,9 @@ let data_storage = {
     population: '',
     flag: '',
     lang: '',
-    currency: ''
+    currency: '',
+    weather_temp: '',
+    weather_descr: ''
 }
 
 dotenv.config()
@@ -54,6 +57,11 @@ app.post('/results', async function(req, res) {
         data_storage.flag = restcountriesData.flag;
         data_storage.lang = restcountriesData.lang;
         data_storage.currency = restcountriesData.curr;
+
+        //weatherbit.io api
+        let weatherbit_data = await fetchWeatherbitApi(process.env.API_WEATHERBITIO, data_storage.lat, data_storage.lng);
+        data_storage.weather_temp = weatherbit_data.w_temp;
+        data_storage.weather_descr = weatherbit_data.w_descr;
 
         res.send(data_storage);
     } catch (error) {
