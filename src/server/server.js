@@ -11,6 +11,7 @@ const fetch = require('node-fetch')
 const fetchGeonamesApi = require('./geonames')
 const fetchRestCountriesApi = require('./restcountries')
 const fetchWeatherbitApi = require('./weatherbit')
+const fetchPixabayApi = require('./pixabay')
 
 let data_storage = {
     dest_name: '',
@@ -26,7 +27,8 @@ let data_storage = {
     lang: '',
     currency: '',
     weather_temp: '',
-    weather_descr: ''
+    weather_descr: '',
+    pict: ''
 }
 
 dotenv.config()
@@ -62,6 +64,10 @@ app.post('/results', async function(req, res) {
         let weatherbit_data = await fetchWeatherbitApi(process.env.API_WEATHERBITIO, data_storage.lat, data_storage.lng);
         data_storage.weather_temp = weatherbit_data.w_temp;
         data_storage.weather_descr = weatherbit_data.w_descr;
+
+        //picabay.com api
+        let pixabay_data = await fetchPixabayApi(process.env.API_PIXABAYCOM, data_storage.dest_name);
+        data_storage.pict = pixabay_data.pict;
 
         res.send(data_storage);
     } catch (error) {

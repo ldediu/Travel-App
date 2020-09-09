@@ -20,7 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7b01384d-be7c-44fe-a60f-5d24df647bf6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/styles/dynam.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/styles/dynam.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/views/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/views/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/restcountries.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/restcountries.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +79,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1598737576448</updated>
-      <workItem from="1598737578297" duration="52836000" />
+      <workItem from="1598737578297" duration="57880000" />
     </task>
     <servers />
   </component>

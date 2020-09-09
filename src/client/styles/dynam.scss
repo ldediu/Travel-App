@@ -35,21 +35,38 @@
   }
 }
 
-.dyn_city {
-  font-weight: bold;
-  font-size: 1.5rem;
+.dyn_general_name {
   padding-bottom: 1rem;
 }
 
+.dyn_city, .dyn_country {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.dyn_flag {
+  display: inline-block;
+  height: 1.5rem;
+  width: 3rem;
+  background: url("https://restcountries.eu/data/usa.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.dyn_about {
+  font-size: 1.1rem;
+  padding: 1rem 0 0.5rem 0;
+}
+
 .dyn_starting {
+  padding-top: 1rem;
   text-decoration: underline;
+  font-weight: bolder;
 }
 .dyn_dates {
-
-}
-
-.dyn_weather {
   padding-bottom: 2rem;
+  font-weight: bolder;
 }
 
 .dyn_but {

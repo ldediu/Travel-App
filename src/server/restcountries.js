@@ -5,7 +5,6 @@ const fetchRestCountriesApi = async (country_code = '') => {
     if (restCountries_response.ok)
     {
         let restCountries_api_data = await restCountries_response.json();
-        console.log(restCountries_api_data)
         let lang = [];
         let curr = [];
         restCountries_api_data.languages.forEach(el => {
