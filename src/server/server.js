@@ -19,6 +19,7 @@ let data_storage = {
     country_code: '',
     lat: '',
     lng: '',
+    curr_city: '',
     dep_date: '',
     ret_date: '',
     capital: '',
@@ -44,6 +45,7 @@ app.post('/results', async function(req, res) {
     try {
         data_storage.dep_date = req.body.departure_time;
         data_storage.ret_date = req.body.return_time;
+        data_storage.curr_city = req.body.current_city;
         //geonames.org api
         let geonamesData = await fetchGeonamesApi(req.body.destination, process.env.API_GEONAMESORG);
         data_storage.dest_name = geonamesData.dest_name;
@@ -66,7 +68,7 @@ app.post('/results', async function(req, res) {
         data_storage.weather_descr = weatherbit_data.w_descr;
 
         //picabay.com api
-        let pixabay_data = await fetchPixabayApi(process.env.API_PIXABAYCOM, data_storage.dest_name);
+        let pixabay_data = await fetchPixabayApi(process.env.API_PIXABAYCOM, req.body.destination);
         data_storage.pict = pixabay_data.pict;
 
         res.send(data_storage);

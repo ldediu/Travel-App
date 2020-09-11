@@ -7,7 +7,7 @@ const fetchWeatherbitApi = async (api_key, lat, lng) => {
     {
         let weatherbit_api_data = await weatherbit_response.json();
         return {
-            w_temp: Math.round(weatherbit_api_data.data[0].temp * 9 / 5 + 32) + 'F',
+            w_temp: Math.round(weatherbit_api_data.data[0].temp * 9 / 5 + 32) + ' ',
             w_descr: weatherbit_api_data.data[0].weather.description
         };
     }

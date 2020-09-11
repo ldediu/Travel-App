@@ -17,13 +17,12 @@
 }
 
 .dyn_pic {
-  height: 30vh;
+  height: 20rem;
   width: 100%;
+}
+
+.dyn_pic img {
   border-radius: 5px;
-  background: url("../media/sanfran.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 .dyn_info {
@@ -48,7 +47,7 @@
   display: inline-block;
   height: 1.5rem;
   width: 3rem;
-  background: url("https://restcountries.eu/data/usa.svg");
+  //background: url("https://restcountries.eu/data/usa.svg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

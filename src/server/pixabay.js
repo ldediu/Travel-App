@@ -1,7 +1,7 @@
 const fetch = require('node-fetch');
 
 const fetchPixabayApi = async (api_key, city) => {
-    let link = `https://pixabay.com/api/?key=${api_key}&q=${city}&category=travel`;
+    let link = `https://pixabay.com/api/?key=${api_key}&q=${city}&orientation=horizontal`;
     let pixabay_response = await fetch(link);
     if (pixabay_response.ok)
     {
