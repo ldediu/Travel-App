@@ -7,10 +7,12 @@ import './styles/recommends.scss'
 import './styles/dynam.scss'
 import './styles/footer.scss'
 
+import { locStorFunctionality } from './js/locStorFunctionality.js';
 import { main } from './js/main.js';
 
 document.addEventListener('DOMContentLoaded', () => {
     console.log('Here');
+    document.querySelector('body').onclick = locStorFunctionality;
     document.getElementById('submit').onclick = main;
 });
 

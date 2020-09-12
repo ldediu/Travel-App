@@ -33,7 +33,7 @@ let data_storage = {
 }
 
 dotenv.config()
-
+const port = process.env.PORT || 8081;
 const app = express()
 app.use(cors())
 app.use(bodyParser.urlencoded({ extended: false }))
@@ -86,6 +86,6 @@ app.get('/', function (req, res) {
 //     res.send(mockAPIResponse)
 // })
 
-app.listen(8081, function () {
+app.listen(port, function () {
     console.log('Server is listening on port 8081')
 })

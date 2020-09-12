@@ -1,3 +1,4 @@
+import { formValidation } from "./formValidation";
 import { updateUI } from './updateUI';
 
 async function main(event) {
@@ -8,6 +9,9 @@ async function main(event) {
     let dep_time = document.getElementById('date_from').value;
     let ret_time = document.getElementById('date_return').value;
     let dyn_cont = document.getElementById('dyn_all');
+
+    let valid = formValidation(current_city, destination_city, dep_time, ret_time);
+
 
     let newCard;
 
