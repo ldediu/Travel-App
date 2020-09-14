@@ -12,7 +12,7 @@ import { main } from './js/main.js';
 
 document.addEventListener('DOMContentLoaded', () => {
     console.log('Here');
-    document.querySelector('body').onclick = locStorFunctionality;
+    locStorFunctionality();
     document.getElementById('submit').onclick = main;
 });
 

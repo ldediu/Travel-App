@@ -22,8 +22,7 @@
     <list default="true" id="7b01384d-be7c-44fe-a60f-5d24df647bf6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/client/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/js/locStorFunctionality.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/js/locStorFunctionality.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +74,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1598737576448</updated>
-      <workItem from="1598737578297" duration="75918000" />
+      <workItem from="1598737578297" duration="80984000" />
     </task>
     <servers />
   </component>
