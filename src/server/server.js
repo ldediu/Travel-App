@@ -41,7 +41,7 @@ app.use(bodyParser.json())
 app.use(express.static('dist'))
 
 app.post('/results', async function(req, res) {
-    console.log('req = ',req.body)
+    //console.log('req = ',req.body)
     try {
         data_storage.dep_date = req.body.departure_time;
         data_storage.ret_date = req.body.return_time;
@@ -77,7 +77,6 @@ app.post('/results', async function(req, res) {
     }
 })
 
-
 app.get('/', function (req, res) {
     res.sendFile('dist/index.html')
 })
@@ -89,3 +88,5 @@ app.get('/', function (req, res) {
 app.listen(port, function () {
     console.log('Server is listening on port 8081')
 })
+
+module.exports = app;

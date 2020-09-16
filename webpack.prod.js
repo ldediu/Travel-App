@@ -6,8 +6,6 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 // const TerserPlugin = require('terser-webpack-plugin');
 // const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
-// ------- Turn ON workbox after
-
 module.exports = {
     entry: './src/client/index.js',
     mode: 'production',
@@ -46,7 +44,7 @@ module.exports = {
             filename: '[name].css',
             chunkFilename: '[id].css',
             //ignoreOrder: false
-        })
-        //new WorkboxPlugin.GenerateSW()
+        }),
+        new WorkboxPlugin.GenerateSW()
     ]
 }

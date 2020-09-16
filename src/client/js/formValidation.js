@@ -1,13 +1,19 @@
-export const formValidation = (cur_city, dest_city, dep_time, ret_time, button) => {
+export const formValidation = (cur_city, dest_city, dep_time, ret_time) => {
     let submit_form_button = document.getElementById('submit');
     submit_form_button.style.color="#eeeeee";
     submit_form_button.innerText = "Send";
+
+    // City validation
+
     if (!cur_city.match(/[a-zA-Z]+/) || !dest_city.match(/[a-zA-Z]+/))
     {
         submit_form_button.style.color="orange";
         submit_form_button.innerText = "Invalid City";
         return false;
     }
+
+    // Date validation
+
     let total_time = new Date(ret_time) - new Date(dep_time);
     let countdown_time = new Date(dep_time) - new Date();
     let matching = /^(202\d{1})-(\d{1,2})-(\d{1,2})$/g;

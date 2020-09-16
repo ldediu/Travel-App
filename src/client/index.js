@@ -11,7 +11,6 @@ import { locStorFunctionality } from './js/locStorFunctionality.js';
 import { main } from './js/main.js';
 
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('Here');
     locStorFunctionality();
     document.getElementById('submit').onclick = main;
 });

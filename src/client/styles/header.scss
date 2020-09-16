@@ -23,6 +23,7 @@ header {
     color: black;
     font-family: 'Arizonia', cursive;
     font-size: 2rem;
+    cursor: pointer;
   }
 }
 
@@ -36,5 +37,11 @@ header {
     @media (max-width:450px){
       padding-right: 1rem;
     }
+  }
+  a {
+    color: #eeeeee;
+  }
+  a:active {
+    color: white;
   }
 }

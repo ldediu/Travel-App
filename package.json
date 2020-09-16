@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/LeoDediu/Travel-App#readme",
   "dependencies": {
+    "@babel/polyfill": "^7.11.5",
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
@@ -32,16 +33,20 @@
     "workbox-webpack-plugin": "^5.1.3"
   },
   "devDependencies": {
+    "@babel/plugin-transform-runtime": "^7.11.5",
     "babel": "^6.23.0",
     "babel-loader": "^8.1.0",
     "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^4.2.2",
+    "eslint": "^7.9.0",
+    "eslint-loader": "^4.0.2",
     "html-webpack-plugin": "^4.3.0",
     "jest": "^26.4.2",
     "node-sass": "^4.14.1",
     "optimize-css-assets-webpack-plugin": "^5.0.3",
     "sass-loader": "^10.0.1",
     "style-loader": "^1.2.1",
+    "supertest": "^4.0.2",
     "terser-webpack-plugin": "^4.1.0",
     "webpack-dev-server": "^3.11.0"
   }
