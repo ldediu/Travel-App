@@ -5,7 +5,8 @@ Simply enter the desired destination and dates of the trip.
 The app provides information about the location like: general information about the country, current weather for that date, or a forecast based on historical data, photo of the destination, etc. 
 The app allows saving and deleting trips in your local storage. 
 
-##Example
+## Example
+
 
 Home            |  My Trips
 :-------------------------:|:-------------------------:

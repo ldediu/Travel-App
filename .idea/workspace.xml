@@ -23,17 +23,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7b01384d-be7c-44fe-a60f-5d24df647bf6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/js/updateUI.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/js/updateUI.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/styles/dynam.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/styles/dynam.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/views/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/views/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/pixabay.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/pixabay.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/weatherbit.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/weatherbit.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/server.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/server.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.prod.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.prod.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +76,7 @@
       <option name="presentableId" value="Default" />
       <updated>1598737576448</updated>
       <workItem from="1598737578297" duration="96249000" />
-      <workItem from="1600370581602" duration="7898000" />
+      <workItem from="1600370581602" duration="8020000" />
     </task>
     <servers />
   </component>
