@@ -11,7 +11,8 @@ async function main(event) {
     let dyn_cont = document.getElementById('dyn_all');
 
     let valid = formValidation(current_city, destination_city, dep_time, ret_time);
-
+    if (!valid)
+        return;
 
     let newCard;
 

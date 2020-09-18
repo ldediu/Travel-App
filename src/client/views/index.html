@@ -4,7 +4,7 @@
     <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+          content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Travel App</title>
 </head>
@@ -28,19 +28,19 @@
                     <form>
                         <div>
                             <label for="curr_place">Current City</label>
-                            <input type="text" name="curr_place" id="curr_place">
+                            <input type="text" name="curr_place" id="curr_place" required>
                         </div>
                         <div>
                             <label for="destination">Destination City</label>
-                            <input type="text" name="destination" id="destination">
+                            <input type="text" name="destination" id="destination" required>
                         </div>
                         <div>
                             <label for="date_from">Departure Date</label>
-                            <input type="date" name="phone" id="date_from">
+                            <input type="date" name="phone" id="date_from" required>
                         </div>
                         <div>
                             <label for="date_return">Returning Date</label>
-                            <input type="date" name="date_return" id="date_return">
+                            <input type="date" name="date_return" id="date_return" required>
                         </div>
                         <div class="full_form">
                             <a href="#" class="btn" id="submit">Send</a>

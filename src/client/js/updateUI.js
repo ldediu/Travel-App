@@ -11,7 +11,7 @@ export const updateUI = (data) => {
                                 <span class="dyn_country">${data.country_name}</span>
                                 <span class="dyn_flag" style="background: url(${data.flag});background-size: cover;background-position: center;background-repeat: no-repeat;"></span>
                             </div>
-                            <div class="dyn_weather">Weather: &nbsp;&nbsp;&nbsp;&nbsp;${data.weather_temp}&deg;F - ${data.weather_descr}</div>
+                            <div class="dyn_weather">Weather: &nbsp;&nbsp;${data.weather_temp}&deg;F - ${data.weather_descr}</div>
                             <hr>
                             <div class="dyn_about">
                                 <div class="dyn_capital">Capital: &nbsp;&nbsp;&nbsp;&nbsp;${data.capital}</div>

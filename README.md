@@ -1,6 +1,11 @@
 # Travel App
 
-This web application helps to plan trips. Simply enter the desired destination and dates of the trip.
+This web application helps to plan trips.
+Simply enter the desired destination and dates of the trip.
+The app provides information about the location like: general information about the country, current weather for that date, or a forecast based on historical data, photo of the destination, etc. 
+The app allows saving and deleting trips in your local storage. 
+
+##Example
 
 Home            |  My Trips
 :-------------------------:|:-------------------------:
@@ -29,3 +34,22 @@ Home            |  My Trips
 
 `cd` into your new folder and run:
 - `npm install`
+
+Add `.env` variables:
+- `API_GEONAMESORG`
+- `API_WEATHERBITIO`
+- `API_PIXABAYCOM`
+
+To test:
+- `npm run test`
+
+To start in `dev` mode:
+- `npm run dev`
+
+To start in `prod` mode:
+- `npm run build`
+- `npm start`
+
+
+    
+    

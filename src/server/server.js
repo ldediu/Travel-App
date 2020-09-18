@@ -63,7 +63,7 @@ app.post('/results', async function(req, res) {
         data_storage.currency = restcountriesData.curr;
 
         //weatherbit.io api
-        let weatherbit_data = await fetchWeatherbitApi(process.env.API_WEATHERBITIO, data_storage.lat, data_storage.lng);
+        let weatherbit_data = await fetchWeatherbitApi(process.env.API_WEATHERBITIO, data_storage.lat, data_storage.lng, data_storage.dep_date);
         data_storage.weather_temp = weatherbit_data.w_temp;
         data_storage.weather_descr = weatherbit_data.w_descr;
 
@@ -77,9 +77,9 @@ app.post('/results', async function(req, res) {
     }
 })
 
-app.get('/', function (req, res) {
-    res.sendFile('dist/index.html')
-})
+// app.get('/', function (req, res) {
+//     res.sendFile('dist/index.html')
+// })
 
 // app.get('/test', function (req, res) {
 //     res.send(mockAPIResponse)
